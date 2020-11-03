@@ -1,0 +1,16 @@
+.portfolio-card {
+  padding: 1rem;
+  border: {
+    style: solid;
+    color: $gray-200;
+    width: 1px;
+    radius: 0.3rem;
+  }
+
+  box-shadow: $gray-200 0 5px 10px;
+
+  .portfolio-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

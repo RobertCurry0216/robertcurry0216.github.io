@@ -1,0 +1,16 @@
+// Pre-state grayscale colors used in other variables
+
+$gray-600: #444054;
+$gray-800: #2f243a;
+
+// Override Bootstrap color system
+
+$pink: #eb5160;
+
+// Override Bootstrap default state colors
+
+$primary: $pink;
+
+// Override Bootstrap yiq lightness value
+
+$yiq-contrasted-threshold: 205;
