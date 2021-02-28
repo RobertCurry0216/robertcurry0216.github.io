@@ -16,7 +16,7 @@ import { Colours } from "../../styles";
 function About() {
   const languages = ["c#", "javascript", "python", "go"];
   const backend = ["asp.net", "sql", "nodejs"];
-  const frontend = ["react", "redux", "bootstrap", "wpf"];
+  const frontend = ["react", "redux", "blazor WebAssembly", "wpf"];
 
   return (
     <Container>
