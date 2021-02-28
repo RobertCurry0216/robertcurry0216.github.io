@@ -62,7 +62,8 @@ h1 {
 }
 
 h2 {
-    font-weight: lighter;
+    font-weight: normal;
+    padding-top: 4rem;
   }
 
 h3{

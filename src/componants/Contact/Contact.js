@@ -4,26 +4,33 @@
 import styled from "styled-components";
 
 //assets
-import { Colours } from "../../styles";
+import { Colours, Breakpoints as bp } from "../../styles";
 
 function Contact() {
   return (
     <Shape>
       <StyledContact id="contact">
         <h2>Contact:</h2>
-        <h3>
-          Email: <a href="mailto:robertcurry@pm.me">robertcurry@pm.me</a>
-        </h3>
-        <h3>
-          Github:{" "}
-          <a href="https://github.com/RobertCurry0216">robertcurry0216</a>
-        </h3>
-        <h3>
-          LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/robert-curry-832a08134/">
-            robert curry
-          </a>
-        </h3>
+        <div className="link">
+          <h3>Email:</h3>{" "}
+          <h3>
+            <a href="mailto:robertcurry@pm.me">robertcurry@pm.me</a>
+          </h3>
+        </div>
+        <div className="link">
+          <h3>Github:</h3>{" "}
+          <h3>
+            <a href="https://github.com/RobertCurry0216">robertcurry0216</a>
+          </h3>
+        </div>
+        <div className="link">
+          <h3>LinkedIn:</h3>{" "}
+          <h3>
+            <a href="https://www.linkedin.com/in/robert-curry-832a08134/">
+              robert curry
+            </a>
+          </h3>
+        </div>
       </StyledContact>
       <div className="infill"></div>
     </Shape>
@@ -63,7 +70,7 @@ const Shape = styled.div`
     position: absolute;
     top: 50%;
     align-self: flex-end;
-    height: 25vh;
+    height: 80%;
     width: 100%;
     background-color: ${Colours.dark};
   }
@@ -87,8 +94,21 @@ const StyledContact = styled.div`
   h3 {
     color: ${Colours.white};
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding-top: 0.5rem;
+    @media ${bp.tablet} {
+      font-size: 1.5rem;
+    }
+  }
+
+  .link {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @media ${bp.mobile} {
+      flex-direction: row;
+    }
   }
 `;
 

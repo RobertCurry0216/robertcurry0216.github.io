@@ -11,7 +11,7 @@ import SocialIcon from "./SocialIcon";
 
 //assets
 import profile from "./img/profile.jpg";
-import { Colours } from "../../styles";
+import { Colours, Breakpoints as bp } from "../../styles";
 
 function About() {
   const languages = ["c#", "javascript", "python", "go"];
@@ -39,20 +39,22 @@ function About() {
               and playing card games with my friends.
             </p>
             <Seperator />
-            <div className="socialLinks">
+            <div className="contactSection">
               <button>Download My CV</button>
-              <SocialIcon
-                socialIcon={faEnvelope}
-                link="mailto:robertcurry@pm.me"
-              />
-              <SocialIcon
-                socialIcon={faGithub}
-                link="https://github.com/RobertCurry0216"
-              />
-              <SocialIcon
-                socialIcon={faLinkedinIn}
-                link="https://www.linkedin.com/in/robert-curry-832a08134/"
-              />
+              <div className="socialLinks">
+                <SocialIcon
+                  socialIcon={faEnvelope}
+                  link="mailto:robertcurry@pm.me"
+                />
+                <SocialIcon
+                  socialIcon={faGithub}
+                  link="https://github.com/RobertCurry0216"
+                />
+                <SocialIcon
+                  socialIcon={faLinkedinIn}
+                  link="https://www.linkedin.com/in/robert-curry-832a08134/"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -121,8 +123,13 @@ const AboutContainer = styled.div`
   }
 
   img {
+    display: none;
     width: 10rem;
     object-fit: cover;
+
+    @media ${bp.mobile} {
+      display: block;
+    }
   }
 
   .aboutSection {
@@ -130,13 +137,20 @@ const AboutContainer = styled.div`
   }
 
   .descriptionSection {
-    padding-left: 1rem;
+    @media ${bp.mobile} {
+      padding-left: 1rem;
+    }
   }
 
-  .socialLinks {
+  .contactSection {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
+
+    @media ${bp.mobile} {
+      flex-direction: row;
+    }
 
     button {
       background-color: ${Colours.primary};
@@ -144,10 +158,18 @@ const AboutContainer = styled.div`
       border-radius: 1.5rem;
       margin-right: 1rem;
 
+      height: 3rem;
+
       &:hover {
         background-color: ${Colours.primaryDark};
         border-color: ${Colours.primaryDark};
       }
+    }
+
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
     }
   }
 

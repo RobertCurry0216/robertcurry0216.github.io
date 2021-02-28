@@ -10,7 +10,7 @@ import Container, { Seperator, Card } from "../utils";
 import Projects from "./Projects";
 
 //styles
-import { Colours } from "../../styles";
+import { Colours, Breakpoints as bp } from "../../styles";
 
 function Portfolio() {
   return (
@@ -30,13 +30,15 @@ function Portfolio() {
                     <h4>Tech Used</h4>
                     <ul>
                       {project.tech.map((t) => (
-                        <li>{t}</li>
+                        <li key={t.id}>{t.name}</li>
                       ))}
                     </ul>
                   </div>
                   <div className="links">
                     {project.links.map((l) => (
-                      <a href={l.link}>{l.text}</a>
+                      <a key={l.id} href={l.link}>
+                        {l.text}
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -64,9 +66,13 @@ const StyledPortfolio = styled.div`
   .projects {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+
+    @media ${bp.mobile} {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
   }
 
   .project {

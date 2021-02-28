@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 //assets
 import profile from "./img/profile.jpg";
@@ -14,8 +15,13 @@ import { Colours, Breakpoints as bp } from "../../styles";
 
 function SideNav() {
   const [showMenu, setShowMenu] = useState(false);
+
   function toggleShowMenu() {
     setShowMenu(!showMenu);
+  }
+
+  function onClickHandler() {
+    setShowMenu(false);
   }
 
   return (
@@ -27,19 +33,64 @@ function SideNav() {
       </button>
       <ul className={showMenu ? "expanded" : ""}>
         <li>
-          <a href="#">Home</a>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={onClickHandler}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={onClickHandler}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link
+            activeClass="active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={onClickHandler}
+          >
+            Portfolio
+          </Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <Link
+            activeClass="active"
+            to="experience"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={onClickHandler}
+          >
+            Experience
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={onClickHandler}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </Nav>
@@ -66,6 +117,7 @@ const Nav = styled.nav`
     font-weight: lighter;
     width: auto;
     z-index: 5;
+    padding-top: 0rem;
   }
 
   ul {
@@ -93,8 +145,12 @@ const Nav = styled.nav`
     font-weight: 800;
 
     &:hover {
-      color: ${Colours.white};
+      cursor: pointer;
     }
+  }
+
+  .active {
+    color: ${Colours.white};
   }
 
   button {

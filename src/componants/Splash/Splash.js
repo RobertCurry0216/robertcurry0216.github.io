@@ -5,12 +5,15 @@ import { Breakpoints as bp } from "../../styles";
 function Splash() {
   return (
     <Container>
-      <StyledSplash>
+      <StyledSplash id="home">
         <div className="textarea">
           <h3 className="greeting">Hi, I'm</h3>
-          <h1>
-            Robert<span>Curry</span>
-          </h1>
+          <div className="name">
+            <h1>Robert</h1>
+            <h1>
+              <span>Curry</span>
+            </h1>
+          </div>
           <h3 className="description">I am a developer</h3>
         </div>
       </StyledSplash>
@@ -32,6 +35,12 @@ const StyledSplash = styled.div`
     font-weight: 700;
     @media ${bp.desktop} {
       font-size: 6rem;
+    }
+  }
+
+  .name {
+    @media ${bp.mobile} {
+      display: flex;
     }
   }
 
