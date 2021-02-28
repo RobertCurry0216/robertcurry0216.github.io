@@ -89,7 +89,7 @@ const Projects = [
     id: uuidv4(),
     title: "Post Tensioning Tool",
     description:
-      "An addin for Reivt used by my team to import exported RAM data imported into revit and modeled in 3D.",
+      "An addin for Reivt used by my team to import RAM engineering data into revit and model the data in 3D.",
     tech: [
       { id: uuidv4(), name: "c#" },
       { id: uuidv4(), name: "wpf" },
