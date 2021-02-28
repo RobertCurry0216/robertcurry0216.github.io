@@ -1,21 +1,14 @@
+//images
 import placeholder from "./img/placeholder.svg";
 import clipboard from "./img/clipboard.svg";
 import music from "./img/music.svg";
+import pttool from "./img/pttool.svg";
+import monkey from "./img/monkey.svg";
+import portfolio from "./img/portfolio.svg";
+
 import { v4 as uuidv4 } from "uuid";
 
 const Projects = [
-  {
-    id: uuidv4(),
-    title: "Post Tensioning Tool",
-    description:
-      "An addin for Reivt used by my team to import exported RAM data imported into revit and modeled in 3D.",
-    tech: [
-      { id: uuidv4(), name: "c#" },
-      { id: uuidv4(), name: "wpf" },
-    ],
-    image: placeholder,
-    links: [],
-  },
   {
     id: uuidv4(),
     title: "ImageToClip",
@@ -39,7 +32,7 @@ const Projects = [
     title: "Monkey",
     description: "A toy programing language written in pure Go",
     tech: [{ id: uuidv4(), name: "go" }],
-    image: placeholder,
+    image: monkey,
     links: [
       {
         id: uuidv4(),
@@ -83,7 +76,7 @@ const Projects = [
       { id: uuidv4(), name: "html" },
       { id: uuidv4(), name: "css" },
     ],
-    image: music,
+    image: portfolio,
     links: [
       {
         id: uuidv4(),
@@ -91,6 +84,18 @@ const Projects = [
         link: "https://github.com/RobertCurry0216/robertcurry0216.github.io",
       },
     ],
+  },
+  {
+    id: uuidv4(),
+    title: "Post Tensioning Tool",
+    description:
+      "An addin for Reivt used by my team to import exported RAM data imported into revit and modeled in 3D.",
+    tech: [
+      { id: uuidv4(), name: "c#" },
+      { id: uuidv4(), name: "wpf" },
+    ],
+    image: pttool,
+    links: [],
   },
 ];
 
