@@ -14,7 +14,7 @@ import profile from "./img/profile.jpg";
 import { Colours, Breakpoints as bp } from "../../styles";
 
 function About() {
-  const languages = ["c#", "javascript", "python", "go"];
+  const languages = ["c#", "javascript", "python", "go", "html", "sass"];
   const backend = ["asp.net", "sql", "nodejs"];
   const frontend = ["react", "redux", "blazor WebAssembly", "wpf"];
 
@@ -44,7 +44,7 @@ function About() {
               <div className="socialLinks">
                 <SocialIcon
                   socialIcon={faEnvelope}
-                  link="mailto:robertcurry@pm.me"
+                  link="mailto:robertcurry0216@pm.me"
                 />
                 <SocialIcon
                   socialIcon={faGithub}

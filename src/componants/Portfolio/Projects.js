@@ -50,17 +50,46 @@ const Projects = [
   },
   {
     id: uuidv4(),
-    title: "React Music player",
-    description: "A single page app to listen to chill hop music",
+    title: "Waves Music player",
+    description: "A react app to listen to chill hop music",
     tech: [
       { id: uuidv4(), name: "javascript" },
       { id: uuidv4(), name: "react" },
       { id: uuidv4(), name: "redux" },
+      { id: uuidv4(), name: "html" },
+      { id: uuidv4(), name: "css" },
     ],
     image: music,
     links: [
-      { id: uuidv4(), text: "Github", link: "" },
-      { id: uuidv4(), text: "View", link: "" },
+      {
+        id: uuidv4(),
+        text: "Github",
+        link: "https://github.com/RobertCurry0216/react-player",
+      },
+      {
+        id: uuidv4(),
+        text: "View",
+        link: "https://robertcurry.xyz/react-player/",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: "Portfolio Site",
+    description: "This site you're looking at right now",
+    tech: [
+      { id: uuidv4(), name: "javascript" },
+      { id: uuidv4(), name: "react" },
+      { id: uuidv4(), name: "html" },
+      { id: uuidv4(), name: "css" },
+    ],
+    image: music,
+    links: [
+      {
+        id: uuidv4(),
+        text: "Github",
+        link: "https://github.com/RobertCurry0216/robertcurry0216.github.io",
+      },
     ],
   },
 ];
