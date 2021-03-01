@@ -41,7 +41,8 @@ const EducationHistory = [
     desctiption: (
       <p>
         Online course that takes you through creating web apps using Ruby on
-        Rails, taken on <a href="theodinproject.com">theodinproject.com</a>.
+        Rails, taken on{" "}
+        <a href="https://theodinproject.com/">theodinproject.com</a>.
       </p>
     ),
     dates: "Ongoing, 70% completed",
@@ -50,7 +51,7 @@ const EducationHistory = [
     title: "Self Driven Education",
     desctiption: (
       <p>
-        I am mainly a self taught developer, taking on what ever chalenges look
+        I am mainly a self taught developer, taking on whatever chalenges look
         interesting and seeing them through.
       </p>
     ),
