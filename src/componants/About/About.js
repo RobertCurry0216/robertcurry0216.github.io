@@ -14,9 +14,9 @@ import profile from "./img/profile.jpg";
 import { Colours, Breakpoints as bp } from "../../styles";
 
 function About() {
-  const languages = ["c#", "javascript", "python", "go", "html", "sass"];
-  const backend = ["asp.net", "sql", "nodejs"];
-  const frontend = ["react", "redux", "blazor WebAssembly", "wpf"];
+  const languages = ["C#", "Javascript", "Python", "Go"];
+  const backend = ["ASP.NET", "SQL", "Node.js"];
+  const frontend = ["React", "Redux", "Blazor WebAssembly", "WPF", "Sass/Css"];
 
   return (
     <Container>
@@ -34,9 +34,10 @@ function About() {
             </p>
             <p>
               In my personal time I enjoy creating micro-games in Lua using the
-              Pico8 fantasy console. When I'm not on my computer I like to
-              ingest the latest sci-fi or horror movie, reading Stephen King,
-              and playing card games with my friends.
+              <a href="https://www.lexaloffle.com/pico-8.php"> Pico-8 </a>
+              fantasy console. When I'm not on my computer I like to catch up on
+              the latest sci-fi or horror movie, read some Stephen King, or play
+              card games with my friends.
             </p>
             <Seperator />
             <div className="contactSection">
@@ -72,22 +73,22 @@ function About() {
           </Card>
           <Card>
             <h3>
-              <span>Back end</span>
+              <span>Front end</span>
             </h3>
             <Seperator />
             <ul>
-              {backend.map((v) => (
+              {frontend.map((v) => (
                 <li>{v}</li>
               ))}
             </ul>
           </Card>
           <Card>
             <h3>
-              <span>Front end</span>
+              <span>Back end</span>
             </h3>
             <Seperator />
             <ul>
-              {frontend.map((v) => (
+              {backend.map((v) => (
                 <li>{v}</li>
               ))}
             </ul>

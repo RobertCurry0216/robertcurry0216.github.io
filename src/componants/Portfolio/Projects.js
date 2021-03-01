@@ -13,10 +13,10 @@ const Projects = [
     id: uuidv4(),
     title: "ImageToClip",
     description:
-      "Allows you to copy text from images to your clipboard to be pasted anywhere you like as plain text.",
+      "A small application to allow you to cut and paste text from images as if it were plain text.",
     tech: [
-      { id: uuidv4(), name: "c#" },
-      { id: uuidv4(), name: "wpf" },
+      { id: uuidv4(), name: "C#" },
+      { id: uuidv4(), name: "WPF" },
     ],
     image: clipboard,
     links: [
@@ -30,8 +30,8 @@ const Projects = [
   {
     id: uuidv4(),
     title: "Monkey",
-    description: "A toy programing language written in pure Go",
-    tech: [{ id: uuidv4(), name: "go" }],
+    description: "A toy programing language written in pure Go.",
+    tech: [{ id: uuidv4(), name: "Go" }],
     image: monkey,
     links: [
       {
@@ -44,13 +44,13 @@ const Projects = [
   {
     id: uuidv4(),
     title: "Waves Music player",
-    description: "A react app to listen to chill hop music",
+    description: "A React app to listen to chill hop music.",
     tech: [
-      { id: uuidv4(), name: "javascript" },
-      { id: uuidv4(), name: "react" },
-      { id: uuidv4(), name: "redux" },
-      { id: uuidv4(), name: "html" },
-      { id: uuidv4(), name: "css" },
+      { id: uuidv4(), name: "Javascript" },
+      { id: uuidv4(), name: "React" },
+      { id: uuidv4(), name: "Redux" },
+      { id: uuidv4(), name: "HTML" },
+      { id: uuidv4(), name: "Css/Scss" },
     ],
     image: music,
     links: [
@@ -69,12 +69,18 @@ const Projects = [
   {
     id: uuidv4(),
     title: "Portfolio Site",
-    description: "This site you're looking at right now",
+    description: (
+      <p>
+        This site you're looking at right now 😊 Written using React and custom
+        styling using{" "}
+        <a href="https://styled-components.com/"> styled-components</a>.
+      </p>
+    ),
     tech: [
-      { id: uuidv4(), name: "javascript" },
-      { id: uuidv4(), name: "react" },
-      { id: uuidv4(), name: "html" },
-      { id: uuidv4(), name: "css" },
+      { id: uuidv4(), name: "Javascript" },
+      { id: uuidv4(), name: "React" },
+      { id: uuidv4(), name: "HTML" },
+      { id: uuidv4(), name: "Scss/styled-compoents" },
     ],
     image: portfolio,
     links: [
@@ -88,11 +94,24 @@ const Projects = [
   {
     id: uuidv4(),
     title: "Post Tensioning Tool",
-    description:
-      "An addin for Reivt used by my team to import RAM engineering data into revit and model the data in 3D.",
+    description: (
+      <p>
+        An addin for
+        <a href="https://www.autodesk.com/products/revit/overview?term=1-YEAR&support=null">
+          {" "}
+          Revit{" "}
+        </a>
+        used by my team to import RAM engineering data into{" "}
+        <a href="https://www.autodesk.com/products/revit/overview?term=1-YEAR&support=null">
+          {" "}
+          Revit{" "}
+        </a>{" "}
+        and model the data in 3D.
+      </p>
+    ),
     tech: [
-      { id: uuidv4(), name: "c#" },
-      { id: uuidv4(), name: "wpf" },
+      { id: uuidv4(), name: "C#" },
+      { id: uuidv4(), name: "WPF" },
     ],
     image: pttool,
     links: [],

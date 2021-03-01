@@ -73,6 +73,7 @@ h3{
 a{
   text-decoration: none;
   color: ${Colours.primary};
+  font-weight: bold;
   &:hover{
     text-decoration: none;
     color: ${Colours.primaryDark}

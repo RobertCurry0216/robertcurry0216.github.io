@@ -1,14 +1,26 @@
 const WorkHistory = [
   {
     title: "TTW - Advance Draftie / In-house developer",
-    desctiption:
-      "As a team member of the advance team at TTW I would split my time drafting and creating in-house apps and tools, using c#, to improve the workflows of both the drafties and the engineers.",
+    desctiption: (
+      <p>
+        As a team member of the advance team at TTW I would split my time
+        drafting and creating in-house apps and tools, using C#, to improve the
+        workflows of both the drafties and the engineers. Some major projects I
+        have worked are the PT (post-tensioning) Import Tool, which will import
+        and model the post-tensing in 3D, and the Column reinforcement tool, to
+        model column reinforcement in 3D.
+      </p>
+    ),
     dates: "Feburary 2020 - Present",
   },
   {
     title: "WSP - Draftie",
-    desctiption:
-      "Along side my role as a draftsperson I would create scripts and addins using Python to aid the engineers and other drafties in their roles",
+    desctiption: (
+      <p>
+        Alongside my role as a draftie I would create scripts and addins using
+        Python to aid the engineers and other drafties in their roles.
+      </p>
+    ),
     dates: "july 2014 - Feburary 2020",
   },
 ];
@@ -16,13 +28,32 @@ const WorkHistory = [
 const EducationHistory = [
   {
     title: "CS50 Introduction to Computer Science",
-    desctiption: "Online course provided by Harvard, taken on EDX.com",
+    desctiption: (
+      <p>
+        Online course provided by Harvard, taken on
+        <a href="https://www.edx.org/cs50"> edX.org</a>.
+      </p>
+    ),
     dates: "Completed Feburary 2021",
   },
   {
+    title: "The Odin Project",
+    desctiption: (
+      <p>
+        Online course that takes you through creating web apps using Ruby on
+        Rails, taken on <a href="theodinproject.com">theodinproject.com</a>.
+      </p>
+    ),
+    dates: "Ongoing, 70% completed",
+  },
+  {
     title: "Self Driven Education",
-    desctiption:
-      "I am mainly a self taught developer, taking on what ever chalenges look interesting and seeing them through.",
+    desctiption: (
+      <p>
+        I am mainly a self taught developer, taking on what ever chalenges look
+        interesting and seeing them through.
+      </p>
+    ),
     dates: "2010 - Present",
   },
 ];
