@@ -2,4 +2,4 @@
 
 This is my portfolio site, written in React.
 
-Custom styled using styled-componants.
+Custom styled using styled-components.
