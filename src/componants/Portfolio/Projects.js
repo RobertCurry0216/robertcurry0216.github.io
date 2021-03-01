@@ -5,6 +5,7 @@ import music from "./img/music.svg";
 import pttool from "./img/pttool.svg";
 import monkey from "./img/monkey.svg";
 import portfolio from "./img/portfolio.svg";
+import exit from "./img/void.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -88,6 +89,34 @@ const Projects = [
         id: uuidv4(),
         text: "Github",
         link: "https://github.com/RobertCurry0216/robertcurry0216.github.io",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: "Exit the Void - Pico-8",
+    description: (
+      <p>
+        A <a href="https://www.lexaloffle.com/pico-8.php"> Pico-8 </a> game
+        about circling blackholes to rescue your friends while not being
+        consumed yourself.
+      </p>
+    ),
+    tech: [
+      { id: uuidv4(), name: "Lua" },
+      { id: uuidv4(), name: "Pico-8" },
+    ],
+    image: exit,
+    links: [
+      {
+        id: uuidv4(),
+        text: "Github",
+        link: "https://github.com/RobertCurry0216/pico-8/tree/master/void",
+      },
+      {
+        id: uuidv4(),
+        text: "Play",
+        link: "https://robertcurry.xyz/pico-8/",
       },
     ],
   },
