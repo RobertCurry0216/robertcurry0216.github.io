@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 body{
@@ -29,7 +30,6 @@ button{
   border-radius: 3px;
   background: transparent;
   color: ${Colours.primary};
-  transition: all 0.3s ease;
 
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",

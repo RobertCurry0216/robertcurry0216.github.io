@@ -12,6 +12,7 @@ import SocialIcon from "./SocialIcon";
 //assets
 import profile from "./img/profile.jpg";
 import { Colours, Breakpoints as bp } from "../../styles";
+import CV from "./assets/RobertCurry-CV.pdf";
 
 function About() {
   const languages = ["C#", "Javascript", "Python", "Go"];
@@ -34,14 +35,24 @@ function About() {
             </p>
             <p>
               In my personal time I enjoy creating micro-games in Lua using the
-              <a href="https://www.lexaloffle.com/pico-8.php"> Pico-8 </a>
+              <a className="btn" href="https://www.lexaloffle.com/pico-8.php">
+                {" "}
+                Pico-8{" "}
+              </a>
               fantasy console. When I'm not on my computer I like to catch up on
               the latest sci-fi or horror movie, read some Stephen King, or play
               card games with my friends.
             </p>
             <Seperator />
             <div className="contactSection">
-              <button>Download My CV</button>
+              <a
+                className="btn"
+                href={CV}
+                target="_blank"
+                download="RobertCurryCV.pdf"
+              >
+                Download My CV
+              </a>
               <div className="socialLinks">
                 <SocialIcon
                   socialIcon={faEnvelope}
@@ -153,17 +164,23 @@ const AboutContainer = styled.div`
       flex-direction: row;
     }
 
-    button {
-      background-color: ${Colours.primary};
+    .btn {
+      font-weight: lighter;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border: 1px solid ${Colours.primary};
+      border-radius: 999999px;
+      background: ${Colours.primary};
       color: ${Colours.white};
-      border-radius: 1.5rem;
-      margin-right: 1rem;
+      transition: all 0.3s ease;
 
-      height: 3rem;
+      font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
       &:hover {
         background-color: ${Colours.primaryDark};
-        border-color: ${Colours.primaryDark};
       }
     }
 

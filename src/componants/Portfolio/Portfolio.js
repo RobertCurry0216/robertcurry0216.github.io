@@ -66,7 +66,7 @@ const StyledPortfolio = styled.div`
   .projects {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
 
