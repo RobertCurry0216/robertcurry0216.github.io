@@ -11,7 +11,7 @@ const WorkHistory = [
         model column reinforcement in 3D.
       </p>
     ),
-    dates: "Feburary 2020 - Present",
+    dates: "February 2020 - Present",
   },
   {
     title: "WSP - Draftie",
@@ -21,7 +21,7 @@ const WorkHistory = [
         Python to aid the engineers and other drafties in their roles.
       </p>
     ),
-    dates: "july 2014 - Feburary 2020",
+    dates: "july 2014 - February 2020",
   },
 ];
 
@@ -30,7 +30,8 @@ const EducationHistory = [
     title: "CS50 Introduction to Computer Science",
     desctiption: (
       <p>
-        Online course provided by Harvard, taken on
+        <a href="https://cs50.harvard.edu/x/2021/syllabus/">CS50 </a> is an
+        online course provided by Harvard, taken on
         <a href="https://www.edx.org/cs50"> edX.org</a>.
       </p>
     ),
@@ -51,7 +52,7 @@ const EducationHistory = [
     title: "Self Driven Education",
     desctiption: (
       <p>
-        I am mainly a self taught developer, taking on whatever chalenges look
+        I am mainly a self taught developer, taking on whatever challenges look
         interesting and seeing them through.
       </p>
     ),

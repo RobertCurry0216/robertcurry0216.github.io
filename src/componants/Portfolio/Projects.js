@@ -31,7 +31,7 @@ const Projects = [
   {
     id: uuidv4(),
     title: "Monkey",
-    description: "A toy programing language written in pure Go.",
+    description: "A toy programming language written in pure Go.",
     tech: [{ id: uuidv4(), name: "Go" }],
     image: monkey,
     links: [
@@ -81,7 +81,7 @@ const Projects = [
       { id: uuidv4(), name: "Javascript" },
       { id: uuidv4(), name: "React" },
       { id: uuidv4(), name: "HTML" },
-      { id: uuidv4(), name: "Scss/styled-compoents" },
+      { id: uuidv4(), name: "Scss/styled-components" },
     ],
     image: portfolio,
     links: [
