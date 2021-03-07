@@ -1,7 +1,7 @@
 import GlobalStyles from "./GlobalStyles";
-import Colours from "./Colours";
 import Breakpoints from "./Breakpoints";
+import { lightTheme, darkTheme } from "./Themes";
 
 export default GlobalStyles;
 
-export { Colours, Breakpoints };
+export { Breakpoints, lightTheme, darkTheme };

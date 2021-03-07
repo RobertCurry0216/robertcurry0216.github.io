@@ -4,7 +4,7 @@
 import styled from "styled-components";
 
 //assets
-import { Colours, Breakpoints as bp } from "../../styles";
+import { Breakpoints as bp } from "../../styles";
 
 function Contact() {
   return (
@@ -14,7 +14,7 @@ function Contact() {
         <div className="link">
           <h3>Email:</h3>{" "}
           <h3>
-            <a href="mailto:robertcurry0216@pm.me">robertcurry0216@pm.me</a>
+            <a href="mailto:Contact@RobertCurry.xyz">contact@robertcurry.xyz</a>
           </h3>
         </div>
         <div className="link">
@@ -52,7 +52,7 @@ const Shape = styled.div`
     left: 0;
     height: 100%;
     width: 51%;
-    background: ${Colours.dark};
+    background: var(--dark);
     transform: skew(0deg, 6deg);
   }
   &:after {
@@ -62,7 +62,7 @@ const Shape = styled.div`
     right: 0;
     height: 100%;
     width: 50%;
-    background: ${Colours.dark};
+    background: var(--dark);
     transform: skew(0deg, -6deg);
   }
 
@@ -72,7 +72,7 @@ const Shape = styled.div`
     align-self: flex-end;
     height: 80%;
     width: 100%;
-    background-color: ${Colours.dark};
+    background-color: var(--dark);
   }
 `;
 
@@ -88,11 +88,11 @@ const StyledContact = styled.div`
   align-self: center;
 
   h2 {
-    color: ${Colours.white};
+    color: var(--white);
   }
 
   h3 {
-    color: ${Colours.white};
+    color: var(--white);
     font-weight: bold;
     font-size: 1rem;
     padding-top: 0.5rem;

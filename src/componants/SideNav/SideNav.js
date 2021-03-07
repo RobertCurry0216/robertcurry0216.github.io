@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 import profile from "./img/profile.jpg";
 
 //styles
-import { Colours, Breakpoints as bp } from "../../styles";
+import { Breakpoints as bp } from "../../styles";
 
 function SideNav() {
   const [showMenu, setShowMenu] = useState(false);
@@ -99,7 +99,7 @@ function SideNav() {
 
 // styles
 const Nav = styled.nav`
-  background-color: ${Colours.dark};
+  background-color: var(--dark);
   position: fixed;
   top: 0;
   left: 0;
@@ -113,7 +113,7 @@ const Nav = styled.nav`
   z-index: 5;
 
   h2 {
-    color: ${Colours.white};
+    color: var(--white);
     font-weight: lighter;
     width: auto;
     z-index: 5;
@@ -127,7 +127,7 @@ const Nav = styled.nav`
     top: -100vh;
     left: 0rem;
     transition: all 0.5s ease-in-out;
-    background: ${Colours.dark};
+    background: var(--dark);
     z-index: 1;
   }
 
@@ -140,7 +140,7 @@ const Nav = styled.nav`
   }
 
   a {
-    color: ${Colours.light};
+    color: var(--light);
     text-transform: uppercase;
     font-weight: 800;
 
@@ -150,17 +150,17 @@ const Nav = styled.nav`
   }
 
   .active {
-    color: ${Colours.white};
+    color: var(--white);
   }
 
   button {
     z-index: 5;
-    color: ${Colours.light};
-    border-color: ${Colours.light};
+    color: var(--light);
+    border-color: var(--light);
 
     &:hover {
-      color: ${Colours.white};
-      border-color: ${Colours.primary};
+      color: var(--white);
+      border-color: var(--primary);
     }
   }
 
@@ -192,7 +192,7 @@ const Nav = styled.nav`
 const ProfilePic = styled.img`
   max-width: 60%;
   border-radius: 50%;
-  border: 0.5rem solid ${Colours.light};
+  border: 0.5rem solid var(--light);
   display: none;
   @media ${bp.desktop} {
     display: block;

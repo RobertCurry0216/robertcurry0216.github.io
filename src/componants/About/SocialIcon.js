@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Colours } from "../../styles";
 
 function SocialIcon({ socialIcon, link }) {
   return (
@@ -11,7 +10,7 @@ function SocialIcon({ socialIcon, link }) {
 }
 
 const SocialIconStyled = styled.a`
-  background-color: ${Colours.dark};
+  background-color: var(--dark);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -19,13 +18,13 @@ const SocialIconStyled = styled.a`
   width: 3rem;
   border-radius: 50%;
   margin-right: 1.5rem;
-  color: ${Colours.white};
+  color: var(--white);
 
   font-size: 1.6rem;
 
   &:hover {
-    background-color: ${Colours.primaryDark};
-    color: ${Colours.white};
+    background-color: var(--primaryDark);
+    color: var(--white);
     cursor: pointer;
   }
 `;

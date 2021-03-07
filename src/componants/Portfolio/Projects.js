@@ -1,5 +1,4 @@
 //images
-import placeholder from "./img/placeholder.svg";
 import clipboard from "./img/clipboard.svg";
 import music from "./img/music.svg";
 import pttool from "./img/pttool.svg";

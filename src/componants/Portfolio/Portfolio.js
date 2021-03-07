@@ -10,7 +10,7 @@ import Container, { Seperator, Card } from "../utils";
 import Projects from "./Projects";
 
 //styles
-import { Colours, Breakpoints as bp } from "../../styles";
+import { Breakpoints as bp } from "../../styles";
 
 function Portfolio() {
   return (
@@ -110,10 +110,10 @@ const StyledPortfolio = styled.div`
           font-size: 1.1rem;
           cursor: pointer;
           padding: 0.5rem 1rem;
-          border: 1px solid ${Colours.primary};
+          border: 1px solid var(--primary);
           border-radius: 3px;
           background: transparent;
-          color: ${Colours.primary};
+          color: var(--primary);
           transition: all 0.3s ease;
 
           font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -121,8 +121,8 @@ const StyledPortfolio = styled.div`
             "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
           &:hover {
-            background-color: ${Colours.primary};
-            color: ${Colours.white};
+            background-color: var(--primary);
+            color: var(--white);
           }
         }
       }

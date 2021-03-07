@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colours } from "../../styles";
 
 function Seperator() {
   return (
@@ -10,7 +9,7 @@ function Seperator() {
 }
 
 const Line = styled.div`
-  background-color: ${Colours.light};
+  background-color: var(--light);
   height: 1px;
   width: 90%;
   margin: 0.8rem 0rem;

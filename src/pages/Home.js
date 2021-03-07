@@ -6,11 +6,11 @@ import Experience from "../componants/Experience";
 import Contact from "../componants/Contact";
 import SideNav from "../componants/SideNav";
 
-function Home() {
+function Home({ toggleTheme }) {
   return (
     <div>
       <SideNav />
-      <Splash />
+      <Splash toggleTheme={toggleTheme} />
       <About />
       <Portfolio />
       <Experience />

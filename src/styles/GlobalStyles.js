@@ -1,20 +1,28 @@
 import { createGlobalStyle } from "styled-components";
-import Colours from "./Colours";
 import bp from "./Breakpoints";
 
 export const GlobalStyle = createGlobalStyle`
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease;
+  
+  --primary: ${({ theme }) => theme.primary};
+  --primaryDark: ${({ theme }) => theme.primaryDark};
+  --dark: ${({ theme }) => theme.dark};
+  --light: ${({ theme }) => theme.light};
+  --white: ${({ theme }) => theme.white};
+  --text: ${({ theme }) => theme.text};
 }
 
 body{
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-  color: ${Colours.dark};
+  color: var(--text);
+  background-color: var(--white);
 
   @media ${bp.desktop}{
     margin-left: 15rem;
@@ -26,23 +34,23 @@ button{
   font-size: 1.1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  border: 1px solid ${Colours.primary};
+  border: 1px solid var(--primary);
   border-radius: 3px;
   background: transparent;
-  color: ${Colours.primary};
+  color: var(--primary);
 
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   
   &:hover{
-    background-color: ${Colours.primary};
-    color: ${Colours.white};
+    background-color: var(--primary);
+    color: var(--white);
   }
 }
 
 span{
-  color: ${Colours.primary};
+  color: var(--primary);
 }
 
 h1,
@@ -72,11 +80,11 @@ h3{
 
 a{
   text-decoration: none;
-  color: ${Colours.primary};
+  color: var(--primary);
   font-weight: bold;
   &:hover{
     text-decoration: none;
-    color: ${Colours.primaryDark}
+    color: var(--primaryDark);
   }
 }
 

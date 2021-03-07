@@ -11,7 +11,7 @@ import SocialIcon from "./SocialIcon";
 
 //assets
 import profile from "./img/profile.jpg";
-import { Colours, Breakpoints as bp } from "../../styles";
+import { Breakpoints as bp } from "../../styles";
 import CV from "./assets/RobertCurry-CV.pdf";
 
 function About() {
@@ -45,18 +45,13 @@ function About() {
             </p>
             <Seperator />
             <div className="contactSection">
-              <a
-                className="btn"
-                href={CV}
-                target="_blank"
-                download="RobertCurryCV.pdf"
-              >
+              <a className="btn" href={CV} download="RobertCurryCV.pdf">
                 Download My CV
               </a>
               <div className="socialLinks">
                 <SocialIcon
                   socialIcon={faEnvelope}
-                  link="mailto:robertcurry0216@pm.me"
+                  link="mailto:contact@robertcurry.xyz"
                 />
                 <SocialIcon
                   socialIcon={faGithub}
@@ -130,7 +125,6 @@ const AboutContainer = styled.div`
 
   p {
     font-size: 1rem;
-    font-weight: lighter;
     padding: 0.5rem 0rem;
   }
 
@@ -169,10 +163,10 @@ const AboutContainer = styled.div`
       font-size: 1.1rem;
       cursor: pointer;
       padding: 0.5rem 1rem;
-      border: 1px solid ${Colours.primary};
+      border: 1px solid var(--primary);
       border-radius: 999999px;
-      background: ${Colours.primary};
-      color: ${Colours.white};
+      background: var(--primary);
+      color: var(--white);
       transition: all 0.3s ease;
 
       font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -180,7 +174,8 @@ const AboutContainer = styled.div`
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
       &:hover {
-        background-color: ${Colours.primaryDark};
+        background-color: var(--primaryDark);
+        border-color: var(--primaryDark);
       }
     }
 
