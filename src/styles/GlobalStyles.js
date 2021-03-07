@@ -59,6 +59,7 @@ h3,
 h4,
 h5,
 h6 {
+  transition: all 0s ease;
     text-transform: uppercase;
     font-family: "Saira Extra Condensed", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,

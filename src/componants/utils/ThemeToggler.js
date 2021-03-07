@@ -29,8 +29,8 @@ const Toggler = styled.div`
     justify-content: center;
     background-color: var(--white);
     border-radius: 9999999px;
-    width: 4rem;
-    height: 2rem;
+    width: 3rem;
+    height: 1.5rem;
 
     overflow: hidden;
 
@@ -47,28 +47,30 @@ const Toggler = styled.div`
     background-color: var(--white);
     border: 1px solid var(--light);
     border-radius: 9999999px;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
     position: relative;
-    right: 1rem;
+    right: 0.7rem;
 
     &.off {
-      right: -1rem;
+      right: -0.7rem;
     }
 
     &::before {
       content: "🌜";
+      font-size: 0.8rem;
       position: relative;
-      right: 1.8rem;
+      right: 1.3rem;
+      bottom: 0.25rem;
     }
 
     &::after {
       content: "🌞";
+      font-size: 0.8rem;
       position: relative;
-      left: 1.8rem;
-      bottom: 1.3rem;
+      left: 1.3rem;
+      bottom: 1.55rem;
     }
   }
 `;
