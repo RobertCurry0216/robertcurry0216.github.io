@@ -126,7 +126,6 @@ const Nav = styled.nav`
     position: absolute;
     top: -100vh;
     left: 0rem;
-    transition: all 0.5s ease-in-out;
     background: var(--dark);
     z-index: 1;
   }

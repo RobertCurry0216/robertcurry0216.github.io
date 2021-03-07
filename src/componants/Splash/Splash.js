@@ -77,7 +77,10 @@ const StyledSplash = styled.div`
     justify-self: flex-start;
     position: relative;
     top: 5rem;
-    right: 1rem;
+
+    @media ${bp.desktop} {
+      top: 1rem;
+    }
   }
 `;
 

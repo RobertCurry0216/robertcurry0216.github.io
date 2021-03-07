@@ -15,12 +15,3 @@ export const darkTheme = {
   white: "#1A191A",
   text: "#656769",
 };
-
-// export const darkTheme = {
-//   primary: "#b2575f",
-//   primaryDark: "#733039",
-//   dark: "#1A191A",
-//   light: "#475166",
-//   white: "#3C3D3E",
-//   text: "#1A191A",
-// };
