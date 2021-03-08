@@ -17,7 +17,7 @@ const SocialIconStyled = styled.a`
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  margin-right: 1.5rem;
+  margin: 0rem 0.75rem;
   color: var(--white);
 
   font-size: 1.6rem;
