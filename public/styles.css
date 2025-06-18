@@ -1,0 +1,80 @@
+body {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 90ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.2rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5 {
+    font-size: 1.4rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+#pagebreak,
+#pagebreak-1 {
+    break-before: page;
+}
+
+#robertcurry {
+    padding-top: 2rem;
+}
+
+#skills {
+    padding-top: 2rem;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.25rem;
+    list-style-type: disc;
+}
+
+#technicalskills + ul {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 0 3rem;
+}
+
+#technology + ul,
+#technology-1 + ul,
+#technology-2 + ul,
+#technology-3 + ul,
+#technology-4 + ul,
+#technology-5 + ul,
+#technology-6 + ul {
+    display: inline-grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    gap: 0 3rem;
+}
